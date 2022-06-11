@@ -1,16 +1,25 @@
+@font-face {
+    font-family: comic-sans;
+    src: url(src/ComicSans.ttf);
+}
+
 body{
     margin: 0;
     height: 100vh;
     width: 100vw;
+    background-color: #f2f2f2;
+    font-family: comic-sans;
 }
 div{
     /* border: 2px solid blue; */
+    font-family: comic-sans;
 }
 .container{
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    font-size: 40px;
 }
 .nav-container{
     display: flex;
@@ -40,6 +49,7 @@ div{
     height: 7%;
 }
 .footer>p,.footer>p>a{
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -93,3 +103,7 @@ button{
     background-color: red;
 }
 . */
+.nav-container{
+    font-size: 40px;
+    margin-top: 40px;
+}

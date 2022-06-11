@@ -1,11 +1,10 @@
 var magicNumber,gridL = 10,gridSize,colorGL = "#ff0000",randomColor="#256fe2";
 
 window.onload = function(){run();}
-setInterval(random, 1000);
+setInterval(random, 100);
 
 function random(){
     randomColor = Math.floor(Math.random()*16777215).toString(16);
-    console.log(randomColor);
 }
 
 document.getElementById("gs").onclick = function(){promptGrid();}
@@ -37,7 +36,7 @@ function test(){
 function goRainbow(){
     for(i=0;i<gridL*gridL;i++){
         document.getElementById(i+"n").onmouseenter = function(event){
-            event.target.style.backgroundColor = randomColor;
+            event.target.style.backgroundColor = "#"+randomColor;
         };
     }
 }
